@@ -6,4 +6,11 @@ html {
   // Color
   --color-dark: #0e1412;
   --color-white: #fff;
+  --color-primary: #fd6038;
+
+  // Navbar
+  --navbar-icon-filter: brightness(0) saturate(100%) invert(68%) sepia(85%)
+    saturate(4530%) hue-rotate(334deg) brightness(96%) contrast(108%);
+
+  // Header
 }

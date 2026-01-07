@@ -15,14 +15,24 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
-    <a href="/" class="logo">
-      <img
-        src="./assets/imgs/logo.png"
-        alt="Justice Law Firm"
-        class="logo__icon"
-      />
-    </a>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+      load("#header", "./templates/header.html");
+    </script>
+
+    <!-- Main -->
+    <main style="min-height: 1000px; background-color: #f8ebc9"></main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
   </body>
 </html>
