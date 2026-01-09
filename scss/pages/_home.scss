@@ -1,0 +1,158 @@
+@use "../abstracts";
+
+.home {
+  .container {
+    --grid-gutter-x: 40px;
+  }
+
+  // Hero
+  &__hero {
+    padding: 115px 0 140px;
+    background-color: #f8ebc9;
+
+    @include abstracts.screen(md) {
+      padding: 22px 0 30px;
+    }
+
+    &-body {
+      display: flex;
+
+      @include abstracts.screen(md) {
+        flex-direction: column;
+        gap: 76px;
+      }
+    }
+
+    &-content {
+      flex-shrink: 0;
+      width: 570px;
+
+      @include abstracts.screen(md) {
+        width: 100%;
+      }
+    }
+
+    &-heading {
+      font-size: 6rem;
+      font-weight: 800;
+      line-height: 116.667%;
+
+      @include abstracts.screen(md) {
+        margin-bottom: 10px;
+
+        font-size: 3.5rem;
+        line-height: 117.143%;
+      }
+    }
+
+    &-label {
+      margin-bottom: 12px;
+
+      @include abstracts.screen(md) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-desc {
+      max-width: 470px;
+
+      @include abstracts.screen(md) {
+        width: 276px;
+      }
+    }
+
+    &-btn {
+      margin-top: 38px;
+      width: 242px;
+
+      @include abstracts.screen(md) {
+        margin-top: 15px;
+        width: 142px;
+      }
+    }
+
+    &-media {
+      position: relative;
+
+      padding: 0 70px;
+      margin-left: auto;
+      width: 470px;
+      height: 476px;
+      background-color: #017848;
+
+      @include abstracts.screen(md) {
+        margin-right: auto;
+
+        width: 240px;
+        height: 242px;
+        padding: 0 35px;
+      }
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        width: 36%;
+        height: 88%;
+        background-color: #fed464;
+      }
+    }
+
+    &-watch,
+    &-decor {
+      position: absolute;
+    }
+
+    &-thumb {
+      position: relative;
+      z-index: 1;
+
+      display: block;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-watch {
+      top: -92px;
+      left: -92px;
+      z-index: 2;
+
+      width: 184px;
+      height: 184px;
+
+      @include abstracts.screen(md) {
+        top: -50px;
+        left: -50px;
+
+        width: 94px;
+        height: 94px;
+      }
+    }
+
+    &-btn-video {
+      height: 100%;
+      width: 100%;
+    }
+
+    &-decor {
+      top: 30%;
+      right: -95px;
+
+      width: 164px;
+      height: 128px;
+
+      @include abstracts.screen(md) {
+        right: -50px;
+
+        width: 83px;
+        height: 65px;
+      }
+    }
+  }
+}

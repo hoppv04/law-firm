@@ -1,12 +1,13 @@
 html {
   // Fonts
   --font-family-primary: "Manrope", sans-serif;
-  --font-family-heading: "Roboto Slab", serif;
+  --font-family-secondary: "Roboto Slab", serif;
 
   // Color
   --color-dark: #0e1412;
   --color-white: #fff;
   --color-primary: #fd6038;
+  --text-color: #586863;
 
   // Navbar
   --navbar-icon-filter: brightness(0) saturate(100%) invert(68%) sepia(85%)

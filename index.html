@@ -21,13 +21,56 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header" class="header"></header>
+    <header id="header" class="header" style="--header-bg: #f8ebc9"></header>
     <script>
       load("#header", "./templates/header.html");
     </script>
 
     <!-- Main -->
-    <main style="min-height: 1000px; background-color: #f8ebc9"></main>
+    <main class="home">
+      <!-- Hero -->
+      <section class="home__hero">
+        <div class="container">
+          <div class="home__hero-body">
+            <div class="home__hero-content">
+              <p class="section__label home__hero-label">
+                #1 Law Firm in New York
+              </p>
+              <h1 class="section__heading home__hero-heading">
+                Where People Meets Personalized Support.
+              </h1>
+              <p class="section__desc home__hero-desc">
+                Where every injury is personal. We are a different kind of law
+                firm. Let our small, passionate group of trial lawyers fight for
+                your rights!
+              </p>
+
+              <button class="btn home__hero-btn">Get a Consultations</button>
+            </div>
+
+            <div class="home__hero-media">
+              <a href="#!" class="home__hero-watch">
+                <img
+                  src="./assets/imgs/hero-watch-video.png"
+                  alt=""
+                  class="home__hero-btn-video"
+                />
+              </a>
+              <img
+                src="./assets/imgs/hero-thumb.jpg"
+                alt="Where People Meets Personalized Support."
+                class="home__hero-thumb"
+              />
+              <img
+                src="./assets/imgs/hero-decor.png"
+                alt=""
+                class="home__hero-decor"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer id="footer" class="footer"></footer>
