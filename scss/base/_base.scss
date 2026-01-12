@@ -122,6 +122,7 @@ strong {
 .btn {
   --height: 60px;
 
+  display: inline-block;
   min-width: 136px;
   height: var(--height);
   padding: 0 16px;
@@ -131,6 +132,7 @@ strong {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: var(--height);
+  text-align: center;
 
   @include abstracts.screen(md) {
     --height: 35px;
