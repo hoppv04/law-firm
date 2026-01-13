@@ -95,6 +95,7 @@ strong {
 .section__label {
   margin-bottom: 6px;
 
+  color: var(--text-color);
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 166.667%;
@@ -134,9 +135,15 @@ strong {
   line-height: var(--height);
   text-align: center;
 
+  transition: 0.3s;
+
   @include abstracts.screen(md) {
     --height: 35px;
 
     font-size: 1.1rem;
+  }
+
+  &:hover {
+    opacity: 0.9;
   }
 }

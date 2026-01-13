@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.service-item {
+  position: relative;
+
+  &:hover &__title {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  &__thumb {
+    height: 370px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    --title-service-height: 72px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    height: var(--title-service-height);
+    background-color: var(--color-white);
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: var(--title-service-height);
+
+    transition: 0.3s;
+
+    @include abstracts.screen(md) {
+      --height: 65px;
+
+      font-size: 1.9rem;
+    }
+  }
+}
