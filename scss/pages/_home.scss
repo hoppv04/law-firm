@@ -65,11 +65,15 @@
 
     &-btn {
       margin-top: 38px;
-      width: 242px;
+      min-width: 242px;
 
       @include abstracts.screen(md) {
+        --height: 35px;
+
         margin-top: 15px;
-        width: 142px;
+        min-width: 142px;
+
+        font-size: 1rem;
       }
     }
 
@@ -253,13 +257,15 @@
 
     &-learn-more {
       margin-top: 38px;
-
       min-width: 166px;
 
       @include abstracts.screen(md) {
-        margin-top: 30px;
+        --height: 42px;
 
+        margin-top: 30px;
         min-width: 116px;
+
+        font-size: 1.2rem;
       }
     }
   }
@@ -296,12 +302,7 @@
       margin-top: 55px;
 
       @include abstracts.screen(md) {
-        --height: 60px;
-
         margin-top: 40px;
-
-        font-size: 1.8rem;
-        font-weight: 600;
       }
     }
   }
@@ -427,6 +428,50 @@
         min-width: 128px;
 
         font-size: 1.2rem;
+      }
+    }
+  }
+
+  // Team
+  &__team {
+    padding: 100px 0;
+    background-color: var(--color-dark);
+    text-align: center;
+
+    @include abstracts.screen(md) {
+      padding: 40px 0 50px;
+    }
+
+    &-label {
+      color: var(--color-primary);
+    }
+
+    &-heading {
+      color: var(--color-white);
+    }
+
+    &-desc {
+      max-width: 470px;
+      margin-left: auto;
+      margin-right: auto;
+
+      color: var(--color-secondary);
+    }
+
+    &-list {
+      margin-top: 70px;
+
+      @include abstracts.screen(md) {
+        margin-top: 40px;
+      }
+    }
+
+    &-view-all {
+      margin-top: 55px;
+      min-width: 171px;
+
+      @include abstracts.screen(md) {
+        margin-top: 40px;
       }
     }
   }

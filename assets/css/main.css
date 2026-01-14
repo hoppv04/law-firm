@@ -266,12 +266,6 @@ strong {
   text-align: center;
   transition: 0.3s;
 }
-@media (max-width: 767.998px) {
-  .btn {
-    --height: 35px;
-    font-size: 1.1rem;
-  }
-}
 .btn:hover {
   opacity: 0.9;
 }
@@ -1639,6 +1633,49 @@ html {
   }
 }
 
+.lawyer-item__thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.lawyer-item__thumb:hover .lawyer-item__view {
+  translate: -50% 0;
+  opacity: 1;
+}
+.lawyer-item__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lawyer-item__view {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  translate: -50% 90px;
+  opacity: 0;
+  transition: 0.3s;
+  min-width: 171px;
+}
+.lawyer-item__content {
+  margin-top: 18px;
+}
+.lawyer-item__name {
+  color: var(--color-white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+}
+.lawyer-item__desc {
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+}
+
 .home .container {
   --grid-gutter-x: 40px;
 }
@@ -1700,12 +1737,14 @@ html {
 }
 .home__hero-btn {
   margin-top: 38px;
-  width: 242px;
+  min-width: 242px;
 }
 @media (max-width: 767.998px) {
   .home__hero-btn {
+    --height: 35px;
     margin-top: 15px;
-    width: 142px;
+    min-width: 142px;
+    font-size: 1rem;
   }
 }
 .home__hero-media {
@@ -1861,8 +1900,10 @@ html {
 }
 @media (max-width: 767.998px) {
   .home__about-learn-more {
+    --height: 42px;
     margin-top: 30px;
     min-width: 116px;
+    font-size: 1.2rem;
   }
 }
 .home__services {
@@ -1896,10 +1937,7 @@ html {
 }
 @media (max-width: 767.998px) {
   .home__services-view-all {
-    --height: 60px;
     margin-top: 40px;
-    font-size: 1.8rem;
-    font-weight: 600;
   }
 }
 .home__features-body {
@@ -2007,6 +2045,45 @@ html {
     margin-top: 20px;
     min-width: 128px;
     font-size: 1.2rem;
+  }
+}
+.home__team {
+  padding: 100px 0;
+  background-color: var(--color-dark);
+  text-align: center;
+}
+@media (max-width: 767.998px) {
+  .home__team {
+    padding: 40px 0 50px;
+  }
+}
+.home__team-label {
+  color: var(--color-primary);
+}
+.home__team-heading {
+  color: var(--color-white);
+}
+.home__team-desc {
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-secondary);
+}
+.home__team-list {
+  margin-top: 70px;
+}
+@media (max-width: 767.998px) {
+  .home__team-list {
+    margin-top: 40px;
+  }
+}
+.home__team-view-all {
+  margin-top: 55px;
+  min-width: 171px;
+}
+@media (max-width: 767.998px) {
+  .home__team-view-all {
+    margin-top: 40px;
   }
 }
 
