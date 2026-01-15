@@ -1396,6 +1396,7 @@ html {
   --font-family-secondary: "Roboto Slab", serif;
   --color-dark: #0e1412;
   --color-white: #fff;
+  --color-yellow-light: #f8ebc9;
   --color-primary: #fd6038;
   --color-secondary: #beccc7;
   --text-color: #586863;
@@ -1681,7 +1682,7 @@ html {
 }
 .home__hero {
   padding: 115px 0 140px;
-  background-color: #f8ebc9;
+  background-color: var(--color-yellow-light);
 }
 @media (max-width: 767.998px) {
   .home__hero {
@@ -2085,6 +2086,41 @@ html {
   .home__team-view-all {
     margin-top: 40px;
   }
+}
+.home__awards {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-yellow-light);
+}
+@media (max-width: 767.998px) {
+  .home__awards {
+    padding: 50px 0 40px;
+  }
+}
+.home__awards-label {
+  color: var(--color-dark);
+}
+.home__awards-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 767.998px) {
+  .home__awards-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+}
+.home__awards-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 270px;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@
   // Hero
   &__hero {
     padding: 115px 0 140px;
-    background-color: #f8ebc9;
+    background-color: var(--color-yellow-light);
 
     @include abstracts.screen(md) {
       padding: 22px 0 30px;
@@ -473,6 +473,46 @@
       @include abstracts.screen(md) {
         margin-top: 40px;
       }
+    }
+  }
+
+  // Awards
+  &__awards {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-yellow-light);
+
+    @include abstracts.screen(md) {
+      padding: 50px 0 40px;
+    }
+
+    &-label {
+      color: var(--color-dark);
+    }
+
+    &-list {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      @include abstracts.screen(md) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        margin-top: 40px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 270px;
+      height: 270px;
+      background-color: #fff;
     }
   }
 }
