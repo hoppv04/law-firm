@@ -1,0 +1,16 @@
+.slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__item {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-dark);
+
+    &--active {
+      background: var(--color-primary);
+    }
+  }
+}
