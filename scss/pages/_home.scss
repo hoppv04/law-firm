@@ -579,4 +579,168 @@
       }
     }
   }
+
+  // FAQ
+  &__faq {
+    &-body {
+      max-width: 770px;
+      margin: 0 auto;
+    }
+
+    &-label,
+    &-heading {
+      text-align: center;
+    }
+
+    &-heading {
+      margin-bottom: 3px;
+
+      @include abstracts.screen(md) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &-tabs {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-tab {
+      padding: 15px;
+
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 166.667%;
+
+      @include abstracts.screen(md) {
+        padding: 10px;
+
+        font-size: 1rem;
+        line-height: 170%;
+      }
+
+      &--active {
+        color: var(--color-primary);
+      }
+    }
+
+    &-list {
+      margin-top: 40px;
+
+      @include abstracts.screen(md) {
+        margin-top: 26px;
+      }
+    }
+
+    &-item {
+      padding: 30px;
+      transition: 0.25s;
+
+      @include abstracts.screen(md) {
+        padding: 14px;
+      }
+
+      &:not(:first-child) {
+        border-top: 1px solid #dbe1e3;
+      }
+    }
+
+    &-item.show {
+      box-shadow: 0 20px 70px 0 rgba(14, 20, 18, 0.07);
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      @include abstracts.screen(md) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-item.show &-answer {
+      display: block;
+    }
+
+    &-item.show &-toggle {
+      background-color: var(--color-primary);
+    }
+
+    &-item.show &-toggle::after {
+      rotate: 180deg;
+    }
+
+    &-item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+
+      @include abstracts.screen(md) {
+        gap: 6px;
+      }
+    }
+
+    &-question {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 145.455%;
+
+      @include abstracts.screen(md) {
+        font-size: 1rem;
+        line-height: 139.221%;
+      }
+    }
+
+    &-toggle {
+      flex-shrink: 0;
+
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-dark);
+
+      transition: 0.25s;
+
+      @include abstracts.screen(md) {
+        width: 14px;
+        height: 14px;
+      }
+
+      &::after {
+        content: "";
+
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url(../../assets/icons/arrow-down-2.svg) no-repeat center /
+          contain;
+
+        transition: 0.25s;
+
+        @include abstracts.screen(md) {
+          width: 8px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    &-answer {
+      display: none;
+
+      margin-top: 18px;
+
+      color: var(--text-color);
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 166.667%;
+
+      @include abstracts.screen(md) {
+        margin-top: 8px;
+
+        font-size: 0.9rem;
+        line-height: 144.444%;
+      }
+    }
+  }
 }
