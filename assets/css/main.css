@@ -2524,5 +2524,37 @@ html {
   width: 158px;
   margin: 40px auto 0;
 }
+.home__cta {
+  padding: 100px 0;
+  background-color: #017848;
+}
+@media (max-width: 767.998px) {
+  .home__cta {
+    padding: 40px 0;
+  }
+}
+.home__cta-body {
+  text-align: center;
+}
+.home__cta-label, .home__cta-heading, .home__cta-desc {
+  color: var(--color-white);
+}
+.home__cta-desc {
+  max-width: 470px;
+  margin: 0 auto;
+}
+.home__cta-btn {
+  margin-top: 38px;
+  min-width: 242px;
+}
+@media (max-width: 767.998px) {
+  .home__cta-btn {
+    --height: 36px;
+    margin-top: 24px;
+    min-width: 142px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
