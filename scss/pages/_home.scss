@@ -743,4 +743,39 @@
       }
     }
   }
+
+  // Blog
+  &__blog {
+    padding: 150px 0;
+
+    @include abstracts.screen(md) {
+      padding: 50px 0;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-browse {
+      align-self: flex-end;
+    }
+
+    &-desc {
+      max-width: 470px;
+    }
+
+    &-list {
+      margin-top: 70px;
+
+      @include abstracts.screen(md) {
+        margin-top: 40px;
+      }
+    }
+
+    &-browse-mobile {
+      width: 158px;
+      margin: 40px auto 0;
+    }
+  }
 }

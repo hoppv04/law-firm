@@ -1765,6 +1765,96 @@ html {
   background: var(--color-primary);
 }
 
+.blog-item__thumb {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.blog-item__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-item__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+@media (max-width: 767.998px) {
+  .blog-item__author {
+    gap: 14px;
+    margin-top: 18px;
+  }
+}
+.blog-item__author-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 767.998px) {
+  .blog-item__author-avatar {
+    width: 58px;
+    height: 58px;
+  }
+}
+.blog-item__author-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%;
+}
+@media (max-width: 767.998px) {
+  .blog-item__author-name {
+    font-size: 1.6rem;
+    line-height: 168.75%;
+  }
+}
+.blog-item__author-role {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+}
+@media (max-width: 767.998px) {
+  .blog-item__author-role {
+    font-size: 1.4rem;
+    line-height: 178.571%;
+  }
+}
+.blog-item__title {
+  margin-top: 20px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+}
+@media (max-width: 767.998px) {
+  .blog-item__title {
+    margin-top: 18px;
+    font-size: 1.9rem;
+    line-height: 152.489%;
+  }
+}
+.blog-item__read-more {
+  margin-top: 12px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%;
+  transition: 0.25s;
+}
+@media (max-width: 767.998px) {
+  .blog-item__read-more {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    line-height: 168.75%;
+  }
+}
+.blog-item__read-more:hover {
+  color: var(--color-primary);
+}
+
 .home .container {
   --grid-gutter-x: 40px;
 }
@@ -2403,6 +2493,36 @@ html {
     font-size: 0.9rem;
     line-height: 144.444%;
   }
+}
+.home__blog {
+  padding: 150px 0;
+}
+@media (max-width: 767.998px) {
+  .home__blog {
+    padding: 50px 0;
+  }
+}
+.home__blog-header {
+  display: flex;
+  justify-content: space-between;
+}
+.home__blog-browse {
+  align-self: flex-end;
+}
+.home__blog-desc {
+  max-width: 470px;
+}
+.home__blog-list {
+  margin-top: 70px;
+}
+@media (max-width: 767.998px) {
+  .home__blog-list {
+    margin-top: 40px;
+  }
+}
+.home__blog-browse-mobile {
+  width: 158px;
+  margin: 40px auto 0;
 }
 
 /*# sourceMappingURL=main.css.map */
