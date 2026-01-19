@@ -1,0 +1,37 @@
+@use "../abstracts";
+
+.services--home {
+  padding: 150px 0;
+
+  @include abstracts.screen(md) {
+    padding: 50px 0;
+  }
+
+  .services__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services__desc {
+    max-width: 470px;
+    text-align: center;
+  }
+
+  .services__list {
+    margin-top: 70px;
+    width: 100%;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+
+  .services__view-all {
+    margin-top: 55px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+}

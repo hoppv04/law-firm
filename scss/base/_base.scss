@@ -123,8 +123,12 @@ strong {
 .btn {
   --height: 60px;
 
-  display: inline-block;
-  min-width: 136px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 64px;
   height: var(--height);
   padding: 0 16px;
   background-color: var(--color-primary);
@@ -133,11 +137,22 @@ strong {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: var(--height);
-  text-align: center;
 
   transition: 0.3s;
 
+  @include abstracts.screen(md) {
+    gap: 5px;
+  }
+
   &:hover {
     opacity: 0.9;
+  }
+
+  &--round {
+    border-radius: 6px;
+
+    @include abstracts.screen(md) {
+      border-radius: 4px;
+    }
   }
 }

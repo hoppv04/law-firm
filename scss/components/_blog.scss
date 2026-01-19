@@ -1,0 +1,35 @@
+@use "../abstracts";
+
+.blog--home {
+  padding: 150px 0;
+
+  @include abstracts.screen(md) {
+    padding: 50px 0;
+  }
+
+  .blog__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blog__browse {
+    align-self: flex-end;
+  }
+
+  .blog__desc {
+    max-width: 470px;
+  }
+
+  .blog__list {
+    margin-top: 70px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+
+  .blog__browse-mobile {
+    width: 158px;
+    margin: 40px auto 0;
+  }
+}

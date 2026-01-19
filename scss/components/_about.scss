@@ -1,0 +1,105 @@
+@use "../abstracts";
+
+.about--home {
+  padding: 100px 0;
+  background-color: var(--color-dark);
+
+  @include abstracts.screen(md) {
+    padding: 30px 0;
+  }
+
+  .about__thumb {
+    position: relative;
+
+    flex-shrink: 0;
+
+    padding-top: 100%;
+    overflow: hidden;
+  }
+
+  .about__img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about__decor {
+    position: absolute;
+    bottom: 110px;
+    right: -60px;
+
+    width: 114px;
+    height: 158px;
+  }
+
+  .about__label {
+    color: var(--color-primary);
+  }
+
+  .about__heading {
+    color: var(--color-white);
+  }
+
+  .about__desc {
+    color: var(--color-secondary);
+  }
+
+  .about__stats {
+    display: flex;
+    gap: 55px;
+
+    margin-top: 28px;
+
+    @include abstracts.screen(md) {
+      gap: 38px;
+
+      margin-top: 15px;
+    }
+  }
+
+  .about__stat-value {
+    color: var(--color-white);
+    font-family: var(--font-family-secondary);
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 141.667%;
+
+    @include abstracts.screen(md) {
+      font-size: 1.6rem;
+      line-height: 141.667%;
+    }
+  }
+
+  .about__stat-label {
+    margin-top: 4px;
+
+    color: var(--color-secondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+
+    @include abstracts.screen(md) {
+      margin-top: 2px;
+
+      font-size: 1.1rem;
+    }
+  }
+
+  .about__learn-more {
+    margin-top: 38px;
+    min-width: 166px;
+
+    @include abstracts.screen(md) {
+      --height: 42px;
+
+      margin-top: 30px;
+      min-width: 116px;
+
+      font-size: 1.2rem;
+    }
+  }
+}

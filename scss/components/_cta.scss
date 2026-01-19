@@ -1,0 +1,40 @@
+@use "../abstracts";
+
+.cta--home {
+  padding: 100px 0;
+  background-color: #017848;
+
+  @include abstracts.screen(md) {
+    padding: 40px 0;
+  }
+
+  .cta__body {
+    text-align: center;
+  }
+
+  .cta__label,
+  .cta__heading,
+  .cta__desc {
+    color: var(--color-white);
+  }
+
+  .cta__desc {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  .cta__btn {
+    margin-top: 38px;
+    min-width: 242px;
+
+    @include abstracts.screen(md) {
+      --height: 36px;
+
+      margin-top: 24px;
+      min-width: 142px;
+
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+}

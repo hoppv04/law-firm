@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Law Firm</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header" style="--header-bg: #fff"></header>
+    <script>
+      load("#header", "./templates/header.html");
+    </script>
+
+    <!-- Main -->
+    <main class="real-estate">
+      <!-- Hero -->
+      <section class="hero hero--real-estate">
+        <div class="container">
+          <!-- Hero main content -->
+          <div class="hero__body">
+            <div class="row gy-3">
+              <div class="col-6 col-md-12">
+                <div class="hero__content">
+                  <h1 class="section__heading hero__heading">
+                    Find Your Dream Home Right Away.
+                  </h1>
+
+                  <p class="section__desc hero__desc">
+                    The experience and commitment to rewarding landowners with
+                    their dream architectural developments has made them earn
+                    trust within and beyond borders.
+                  </p>
+
+                  <a href="#!" class="btn btn--round hero__cta">
+                    Find Property
+                    <img
+                      src="./assets/icons/real-estate/arrow-right.svg"
+                      alt=""
+                      class="hero__cta-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-5 col-md-12 offset-1 offset-md-0">
+                <figure class="hero__thumb">
+                  <img
+                    src="./assets/imgs/real-estate/hero-thumb.jpg"
+                    alt="Modern real estate building"
+                    class="hero__img"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero search -->
+          <form class="hero__search" action="#">
+            <div class="hero__filters">
+              <div class="hero__filters-group">
+                <!-- Location -->
+                <div class="hero__filter">
+                  <img
+                    src="./assets/icons/real-estate/location.svg"
+                    alt=""
+                    class="hero__filter-icon"
+                  />
+
+                  <div class="hero__filter-content">
+                    <span class="hero__filter-label">Location</span>
+
+                    <button type="button" class="hero__filter-value">
+                      Select Location
+                      <img
+                        src="./assets/icons/real-estate/arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Property type -->
+                <div class="hero__filter">
+                  <img
+                    src="./assets/icons/real-estate/home.svg"
+                    alt=""
+                    class="hero__filter-icon"
+                  />
+                  <div class="hero__filter-content">
+                    <span class="hero__filter-label"> Property Type </span>
+
+                    <button type="button" class="hero__filter-value">
+                      Choose Property Type
+                      <img
+                        src="./assets/icons/real-estate/arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Price -->
+                <div class="hero__filter">
+                  <img
+                    src="./assets/icons/real-estate/purse.svg"
+                    alt=""
+                    class="hero__filter-icon"
+                  />
+
+                  <div class="hero__filter-content">
+                    <span class="hero__filter-label"> Price Range </span>
+
+                    <button type="button" class="hero__filter-value">
+                      Choose Price
+                      <img
+                        src="./assets/icons/real-estate/arrow-down.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn--round hero__search-btn">
+                <img
+                  src="./assets/icons/real-estate/magnifying-glass.svg"
+                  alt="Search property"
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+  </body>
+</html>

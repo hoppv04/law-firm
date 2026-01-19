@@ -32,7 +32,7 @@ $gutters: (
 }
 
 .container-fluid {
-  --grid-gutter-x: #{$grid-gutter-width};
+  --grid-gutter-x: 40px;
   --grid-gutter-y: 0;
 
   width: 100%;

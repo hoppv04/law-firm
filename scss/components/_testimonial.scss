@@ -1,0 +1,64 @@
+@use "../abstracts";
+
+.testimonial--home {
+  padding: 150px 0;
+
+  @include abstracts.screen(md) {
+    padding: 50px 0;
+  }
+
+  .testimonial__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testimonial__heading {
+    max-width: 470px;
+
+    margin-bottom: 0;
+  }
+
+  .testimonial__nav {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+  }
+
+  .testimonial__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-dark);
+
+    transition: 0.25s;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+
+  .testimonial__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+    margin-top: 70px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+
+  .testimonial__dots {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 55px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+}

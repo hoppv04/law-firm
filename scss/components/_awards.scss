@@ -1,0 +1,40 @@
+@use "../abstracts";
+
+.awards--home {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-yellow-light);
+
+  @include abstracts.screen(md) {
+    padding: 50px 0 40px;
+  }
+
+  .awards__label {
+    color: var(--color-dark);
+  }
+
+  .awards__list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      margin-top: 40px;
+    }
+  }
+
+  .awards__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+  }
+}

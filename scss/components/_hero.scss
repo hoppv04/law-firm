@@ -1,0 +1,257 @@
+@use "../abstracts";
+
+.hero {
+  &__heading {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 116.667%;
+
+    @include abstracts.screen(md) {
+      margin-bottom: 10px;
+
+      font-size: 3.5rem;
+      line-height: 117.143%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 12px;
+
+    color: var(--color-dark);
+
+    @include abstracts.screen(md) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__desc {
+    max-width: 470px;
+
+    @include abstracts.screen(md) {
+      width: 276px;
+    }
+  }
+}
+
+.hero--home {
+  padding: 115px 0 140px;
+  background-color: var(--color-yellow-light);
+
+  @include abstracts.screen(md) {
+    padding: 22px 0 30px;
+  }
+
+  .hero__body {
+    @include abstracts.screen(md) {
+      gap: 76px;
+    }
+  }
+
+  .hero__btn {
+    margin-top: 38px;
+    min-width: 242px;
+
+    @include abstracts.screen(md) {
+      --height: 35px;
+
+      margin-top: 15px;
+      min-width: 142px;
+
+      font-size: 1rem;
+    }
+  }
+
+  .hero__media {
+    position: relative;
+
+    padding: 0 70px;
+    margin-left: auto;
+    width: 470px;
+    height: 476px;
+    background-color: #017848;
+
+    @include abstracts.screen(md) {
+      margin-right: auto;
+
+      width: 240px;
+      height: 242px;
+      padding: 0 35px;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 36%;
+      height: 88%;
+      background-color: #fed464;
+    }
+  }
+
+  .hero__watch,
+  .hero__decor {
+    position: absolute;
+  }
+
+  .hero__thumb {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero__watch {
+    top: -92px;
+    left: -92px;
+    z-index: 2;
+
+    width: 184px;
+    height: 184px;
+
+    @include abstracts.screen(md) {
+      top: -50px;
+      left: -50px;
+
+      width: 94px;
+      height: 94px;
+    }
+  }
+
+  .hero__btn-video {
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero__decor {
+    top: 30%;
+    right: -95px;
+
+    width: 164px;
+    height: 128px;
+
+    @include abstracts.screen(md) {
+      right: -50px;
+
+      width: 83px;
+      height: 65px;
+    }
+  }
+}
+
+.hero--real-estate {
+  padding: 40px 0 131px;
+
+  @include abstracts.screen(md) {
+    padding: 10px 0 40px;
+  }
+
+  .hero__desc {
+    padding-right: 4px;
+  }
+
+  .hero__cta {
+    margin-top: 40px;
+    min-width: 229px;
+
+    text-transform: uppercase;
+
+    @include abstracts.screen(md) {
+      --height: 35px;
+
+      margin-top: 20px;
+      min-width: 134px;
+
+      font-size: 1.1rem;
+
+      &-icon {
+        width: 14px;
+      }
+    }
+  }
+
+  .hero__thumb {
+    height: 380px;
+
+    @include abstracts.screen(md) {
+      height: 270px;
+    }
+  }
+
+  .hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .hero__filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+    margin-top: 60px;
+    padding: 30px 97px;
+    border-radius: 8px;
+    box-shadow: 0 20px 70px 0 rgba(14, 20, 18, 0.07);
+
+    @include abstracts.screen(md) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 30px;
+
+      margin-top: 40px;
+      padding: 0;
+      box-shadow: none;
+      border-radius: none;
+    }
+  }
+
+  .hero__filters-group {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .hero__filter {
+    display: flex;
+    gap: 10px;
+
+    &-icon {
+      margin-top: -26px;
+      width: 24px;
+    }
+
+    &-label {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 145.455%;
+    }
+
+    &-value {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-top: 5px;
+
+      color: var(--text-color);
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 171.429%;
+    }
+  }
+}

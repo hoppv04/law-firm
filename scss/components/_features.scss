@@ -1,0 +1,116 @@
+@use "../abstracts";
+
+.features + .features {
+  margin-top: 150px;
+
+  @include abstracts.screen(md) {
+    margin-top: 50px;
+  }
+}
+
+.features--home {
+  .features__body {
+    justify-content: space-between;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    @include abstracts.screen(md) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .features__thumb {
+    position: relative;
+
+    padding-top: 100%;
+  }
+
+  .features__img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .features__decor {
+    position: absolute;
+    top: 40%;
+
+    &--top {
+      left: -50px;
+
+      width: 117px;
+      height: 129px;
+
+      @include abstracts.screen(md) {
+        left: -15px;
+
+        width: 63px;
+        height: 69px;
+      }
+    }
+
+    &--bottom {
+      left: -60px;
+
+      width: 130px;
+      height: 93px;
+
+      @include abstracts.screen(md) {
+        left: -15px;
+
+        width: 68px;
+        height: 49px;
+      }
+    }
+  }
+
+  .features__content {
+    flex-shrink: 0;
+    max-width: 470px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-top: 28px;
+    padding-left: 20px;
+
+    list-style-type: disc;
+
+    @include abstracts.screen(md) {
+      margin-top: 20px;
+    }
+  }
+
+  .features__item {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 166.667%;
+
+    @include abstracts.screen(md) {
+      font-size: 1.2rem;
+      line-height: 175%;
+    }
+  }
+
+  .features__cta {
+    margin-top: 38px;
+
+    min-width: 180px;
+
+    @include abstracts.screen(md) {
+      margin-top: 20px;
+
+      min-width: 128px;
+
+      font-size: 1.2rem;
+    }
+  }
+}

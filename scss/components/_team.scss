@@ -1,0 +1,46 @@
+@use "../abstracts";
+
+.team--home {
+  margin-top: 150px;
+  padding: 100px 0;
+  background-color: var(--color-dark);
+  text-align: center;
+
+  @include abstracts.screen(md) {
+    margin-top: 50px;
+    padding: 40px 0 50px;
+  }
+
+  .team__label {
+    color: var(--color-primary);
+  }
+
+  .team__heading {
+    color: var(--color-white);
+  }
+
+  .team__desc {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--color-secondary);
+  }
+
+  .team__list {
+    margin-top: 70px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+
+  .team__view-all {
+    margin-top: 55px;
+    min-width: 171px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+}
