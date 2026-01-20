@@ -1,6 +1,6 @@
 @use "../abstracts";
 
-.about--home {
+.about {
   padding: 100px 0;
   background-color: var(--color-dark);
 
@@ -8,6 +8,20 @@
     padding: 30px 0;
   }
 
+  &__label {
+    color: var(--color-primary);
+  }
+
+  &__heading {
+    color: var(--color-white);
+  }
+
+  &__desc {
+    color: var(--color-secondary);
+  }
+}
+
+.about--home {
   .about__thumb {
     position: relative;
 
@@ -33,18 +47,6 @@
 
     width: 114px;
     height: 158px;
-  }
-
-  .about__label {
-    color: var(--color-primary);
-  }
-
-  .about__heading {
-    color: var(--color-white);
-  }
-
-  .about__desc {
-    color: var(--color-secondary);
   }
 
   .about__stats {
@@ -100,6 +102,95 @@
       min-width: 116px;
 
       font-size: 1.2rem;
+    }
+  }
+}
+
+.about--real-estate {
+  .about__features {
+    margin-top: 50px;
+
+    @include abstracts.screen(md) {
+      margin-top: 30px;
+    }
+  }
+
+  .about__feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 20px;
+
+    @include abstracts.screen(md) {
+      gap: 10px;
+
+      margin-top: 14px;
+    }
+  }
+
+  .about__feature-icon-wrap {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+
+    @include abstracts.screen(md) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  .about__feature-icon {
+    @include abstracts.screen(md) {
+      width: 14px;
+    }
+  }
+
+  .about__feature-text {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+
+    @include abstracts.screen(md) {
+      font-size: 1.1rem;
+      line-height: 154.545%;
+    }
+  }
+
+  .about__cta {
+    margin-top: 50px;
+    min-width: 161px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+
+  .about__thumb {
+    height: 670px;
+
+    @include abstracts.screen(md) {
+      height: 400px;
+    }
+  }
+
+  .about__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+    @include abstracts.screen(md) {
+      border-radius: 5px;
     }
   }
 }
