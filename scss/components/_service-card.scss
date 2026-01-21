@@ -1,0 +1,84 @@
+@use "../abstracts";
+
+.service-card {
+  padding: 40px 30px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+
+  @include abstracts.screen(md) {
+    padding: 27px 37px;
+  }
+
+  transition: 0.25s;
+
+  &__icon,
+  &__icon-img {
+    transition: 0.25s;
+  }
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 20px 70px 0 rgba(14, 20, 18, 0.07);
+  }
+
+  &:hover &__icon {
+    background-color: var(--color-primary);
+  }
+
+  &:hover &__icon-img {
+    color: var(--color-white);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #ffefe5;
+
+    @include abstracts.screen(md) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &__icon-img {
+    color: var(--color-primary);
+  }
+
+  &__title {
+    margin-top: 30px;
+
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 150%;
+
+    @include abstracts.screen(md) {
+      margin-top: 27px;
+
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+  }
+
+  &__desc {
+    margin-top: 20px;
+
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+
+    @include abstracts.screen(md) {
+      margin-top: 18px;
+
+      font-size: 1.5rem;
+      line-height: 168.75%;
+    }
+  }
+}

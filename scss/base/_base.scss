@@ -72,12 +72,12 @@ strong {
   font-weight: 600;
 }
 
-.section__title,
-.section__label {
+.section-title,
+.section-label {
   font-family: var(--font-family-secondary);
 }
 
-.section__title {
+.section-title {
   margin-bottom: 18px;
 
   font-size: 4.2rem;
@@ -92,7 +92,7 @@ strong {
   }
 }
 
-.section__label {
+.section-label {
   margin-bottom: 6px;
 
   color: var(--text-color);
@@ -108,7 +108,7 @@ strong {
   }
 }
 
-.section__desc {
+.section-desc {
   color: var(--text-color);
   font-size: 1.8rem;
   font-weight: 400;
