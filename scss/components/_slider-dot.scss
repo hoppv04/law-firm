@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .slider-dots {
   display: flex;
   align-items: center;
@@ -11,6 +13,27 @@
 
     &--active {
       background: var(--color-primary);
+    }
+  }
+}
+
+.slider-dots--real-estate {
+  justify-content: center;
+  gap: 30px;
+
+  margin-top: 70px;
+
+  @include abstracts.screen(md) {
+    margin-top: 40px;
+  }
+
+  .slider-dots__item {
+    width: 13px;
+    height: 13px;
+    background: #e0e0e0;
+
+    &--active {
+      background: #eb5757;
     }
   }
 }
