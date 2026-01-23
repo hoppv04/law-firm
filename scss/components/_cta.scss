@@ -2,7 +2,7 @@
 
 .cta--home {
   padding: 100px 0;
-  background-color: #017848;
+  background-color: var(--green-color);
 
   @include abstracts.screen(md) {
     padding: 40px 0;

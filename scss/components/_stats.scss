@@ -1,0 +1,42 @@
+@use "../abstracts";
+
+.stats {
+  padding: 100px 0;
+  background: var(--green-color);
+
+  @include abstracts.screen(md) {
+    padding: 40px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  &__value {
+    font-family: var(--font-family-secondary);
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 123.81%;
+  }
+
+  &__label {
+    margin-top: 20px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+  }
+}
