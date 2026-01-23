@@ -1,0 +1,59 @@
+@use "../abstracts";
+
+.projects {
+  padding: 150px 0 100px;
+  background: var(--color-dark);
+
+  @include abstracts.screen(md) {
+    padding: 40px 0;
+  }
+
+  &__label {
+    color: var(--color-primary);
+    text-align: center;
+  }
+
+  &__heading {
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    color: var(--color-white);
+    text-align: center;
+
+    @include abstracts.screen(md) {
+      font-size: 2.4rem;
+      line-height: 125%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    column-count: 3;
+    column-gap: 30px;
+
+    @include abstracts.screen(md) {
+      column-count: 1;
+    }
+  }
+
+  &__thumb {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    height: 370px;
+
+    &--tall {
+      height: 484px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
