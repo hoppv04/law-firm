@@ -1,13 +1,28 @@
 @use "../abstracts";
 
-.team--home {
+.team {
   margin-top: 150px;
-  padding: 100px 0;
-  background-color: var(--color-dark);
   text-align: center;
 
   @include abstracts.screen(md) {
     margin-top: 50px;
+  }
+
+  .team__view-all {
+    margin-top: 55px;
+    min-width: 171px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.team--home {
+  padding: 100px 0;
+  background-color: var(--color-dark);
+
+  @include abstracts.screen(md) {
     padding: 40px 0 50px;
   }
 
@@ -42,5 +57,22 @@
     @include abstracts.screen(md) {
       margin-top: 40px;
     }
+  }
+}
+
+.team--real-estate {
+  .team__heading {
+    margin-bottom: 70px;
+
+    @include abstracts.screen(md) {
+      margin-bottom: 40px;
+
+      font-size: 2.4rem;
+      line-height: 154.167%;
+    }
+  }
+
+  .team__view-all {
+    min-width: 136px;
   }
 }
