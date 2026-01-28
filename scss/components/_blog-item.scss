@@ -81,6 +81,7 @@
   }
 
   &__read-more {
+    display: inline-block;
     margin-top: 12px;
 
     font-size: 1.8rem;
@@ -98,6 +99,57 @@
 
     &:hover {
       color: var(--color-primary);
+    }
+  }
+}
+
+.blog-item--real-estate {
+  .blog-item__thumb {
+    height: 408px;
+    padding-top: 0;
+    border-radius: 10px;
+
+    @include abstracts.screen(md) {
+      height: 240px;
+    }
+  }
+
+  .blog-item__title {
+    @include abstracts.screen(md) {
+      margin-top: 10px;
+
+      font-size: 1.4rem;
+      line-height: 157.143%;
+    }
+  }
+
+  .blog-item__date,
+  .blog-item__desc {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+
+    @include abstracts.screen(md) {
+      margin-top: 10px;
+
+      font-size: 1rem;
+      line-height: 160%;
+    }
+  }
+
+  .blog-item__read-more {
+    text-transform: uppercase;
+    margin-top: 15px;
+
+    @include abstracts.screen(md) {
+      margin-top: 10px;
+
+      font-size: 1rem;
+      line-height: 170%;
     }
   }
 }

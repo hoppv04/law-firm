@@ -1,12 +1,14 @@
 @use "../abstracts";
 
-.blog--home {
+.blog {
   padding: 150px 0;
 
   @include abstracts.screen(md) {
     padding: 50px 0;
   }
+}
 
+.blog--home {
   .blog__header {
     display: flex;
     justify-content: space-between;
@@ -31,5 +33,20 @@
   .blog__browse-mobile {
     width: 158px;
     margin: 40px auto 0;
+  }
+}
+
+.blog--real-estate {
+  .blog__heading,
+  .blog__label {
+    text-align: center;
+  }
+
+  .blog__label {
+    color: var(--color-primary);
+  }
+
+  .blog__heading {
+    margin-bottom: 52px;
   }
 }
