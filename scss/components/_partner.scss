@@ -1,0 +1,28 @@
+@use "../abstracts";
+
+.partner {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 204px;
+    height: 91px;
+    border-radius: 12px;
+
+    &:hover {
+      box-shadow: 0 45px 80px 0 rgba(0, 0, 0, 0.04);
+    }
+  }
+}

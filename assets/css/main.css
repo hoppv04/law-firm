@@ -2644,6 +2644,29 @@ html {
   object-fit: cover;
 }
 
+.partner__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 767.998px) {
+  .partner__list {
+    flex-direction: column;
+  }
+}
+.partner__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 204px;
+  height: 91px;
+  border-radius: 12px;
+}
+.partner__item:hover {
+  box-shadow: 0 45px 80px 0 rgba(0, 0, 0, 0.04);
+}
+
 .logo__icon {
   width: 84px;
   height: 67px;
